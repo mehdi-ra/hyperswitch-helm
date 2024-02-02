@@ -1,0 +1,19 @@
+apiVersion: v1
+entries:
+  hyperswitch-card-vault:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-02T09:46:36.073316937Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.2.27
+    description: A Helm chart for creating Hyperswitch Card Vault
+    digest: 68737ba42bacd6354575ed686c372ca503b55c88c46a2c5194cb7e2dc8fe6675
+    name: hyperswitch-card-vault
+    type: application
+    urls:
+    - https://github.com/mehdi-ra/hyperswitch-helm/releases/download/hyperswitch-card-vault-0.1.1/hyperswitch-card-vault-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-02-02T09:46:36.073324832Z"
