@@ -16,4 +16,41 @@ entries:
     urls:
     - https://github.com/mehdi-ra/hyperswitch-helm/releases/download/hyperswitch-card-vault-0.1.1/hyperswitch-card-vault-0.1.1.tgz
     version: 0.1.1
-generated: "2024-02-02T09:46:36.073324832Z"
+  hyperswitch-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-02-02T10:00:20.36399796Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.6.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.2.27
+    description: A Helm chart for Kubernetes to deploy hyperswitch application
+    digest: 87befd51af8e8c15a708a4838f212e7afad7ee5adc05f86c40dd4b3ee8c694ae
+    name: hyperswitch-helm
+    type: application
+    urls:
+    - https://github.com/mehdi-ra/hyperswitch-helm/releases/download/hyperswitch-helm-0.1.1/hyperswitch-helm-0.1.1.tgz
+    version: 0.1.1
+  hyperswitchsdk:
+  - apiVersion: v2
+    appVersion: 0.15.8
+    created: "2024-02-02T10:00:20.481279339Z"
+    description: 'Helm chart for Hyperswitch SDK static Server. This chart allow end
+      user to deploy standalone  [SDK](https://github.com/juspay/hyperswitch-web)
+      with different way:   - prebuilt nginx static server (deployment - required
+      a specific docker build)    - autobuild nginx static server (statefulset and
+      assets saved in PVC)   The prebuilt image is suitable for production, no building
+      time. Autobuild is suitable to quick start, assets are built in initContainer
+      and saved in PVC. Nginx container will serve  assets'
+    digest: 5979aebbf9b736e1a9dcf1b8720795462bff6ec704430f7bc792a8ce648c13ef
+    name: hyperswitchsdk
+    type: application
+    urls:
+    - https://github.com/mehdi-ra/hyperswitch-helm/releases/download/hyperswitchsdk-0.1.1/hyperswitchsdk-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-02-02T10:00:20.481286211Z"
